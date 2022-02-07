@@ -22,6 +22,10 @@ recipeSelected = new EventEmitter<Recipe>();
           return this.recipes.slice();
       }
 
+      getRecipe(id:number){
+          return this.recipes[id];
+      }
+
       addToRecipeService(ingredients: Ingredient[]){
         this.shoppingListService.addIngredients(ingredients);
       }
